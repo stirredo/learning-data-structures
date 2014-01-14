@@ -28,5 +28,30 @@ public class ArrayDataStructure {
         }
         count++;
     }
-    public void 
+    public boolean delete(long value) {
+        int j;
+        for(j=0;j<count;j++) {
+            if(array[j] == value) {
+                break;
+            }
+        }
+        if(j == count ) {
+            return false;
+        } else {
+            for(int i = j;i < count;i++) {
+                array[i] = array[i+1];
+            }
+            count--;
+            return true;
+        }
+
+
+    }
+    public void display() {
+        for(int j=0;i<count;i++) {
+            System.out.println(a[j]+ " ");
+
+        }
+        System.out.println("");
+    }
 }
