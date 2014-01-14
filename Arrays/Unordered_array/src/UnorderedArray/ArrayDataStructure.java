@@ -1,7 +1,7 @@
 package UnorderedArray;
 
 /**
- * Created by Abhishek on 1/15/14.
+ * Created by Stirredo on 1/15/14.
  */
 public class ArrayDataStructure {
     private long[] array;
