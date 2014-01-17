@@ -10,8 +10,8 @@ public class ArrayDataStructure {
         array = new long[size];
         count = 0;
     }
-    public int find(long searchKey) {
-        //returns the key (0 to n) otherwise returns -1
+    public Integer find(long searchKey) {
+        //returns the key (0 to n) otherwise returns null
         int i;
         for(i=0;i < count;i++) {
             if(array[i] == searchKey) {
@@ -20,7 +20,7 @@ public class ArrayDataStructure {
             }
 
         }
-        return -1;
+        return null;
     }
     public void insert(long value) {
         if(count < array.length) {
@@ -48,8 +48,9 @@ public class ArrayDataStructure {
 
     }
     public void display() {
-        for(int j=0;i<count;i++) {
-            System.out.println(a[j]+ " ");
+
+        for(int j=0;j<count;j++) {
+            System.out.print(array[j]+ " ");
 
         }
         System.out.println("");
