@@ -1,3 +1,5 @@
 Implement sorting of object (The one with sorting last names of people).
 All exercises of Chapter 3 (Sorting) pg 112-113 of Data Structures in Java.
+Implement priority queue in a generic way.
+Reimplement the int priority queue on your again without any help.
 

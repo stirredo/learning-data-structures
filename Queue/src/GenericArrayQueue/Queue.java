@@ -6,10 +6,10 @@ import java.util.ArrayList;
  * Created by stirredo on 1/20/14.
  */
 public class Queue<type> {
-    private int count;
-    private int front;
-    private int rear;
-    private int maxSize;
+    protected int count;
+    protected int front;
+    protected int rear;
+    protected int maxSize;
     public type[] array;
     public Queue(int maxSize) {
         array = (type[]) new Object[maxSize];
