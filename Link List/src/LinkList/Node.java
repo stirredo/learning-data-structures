@@ -10,7 +10,7 @@ public class Node {
         this.data = data;
 
     }
-    public void displayLink() {
-        System.out.println("This node contains: "+this.data);
+    public void displayNode() {
+        System.out.print(this.data);
     }
 }

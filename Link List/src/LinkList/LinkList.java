@@ -52,7 +52,7 @@ public class LinkList {
         if(!isEmpty()) {
             System.out.print("first->last: ");
             Node temp = first;
-            while(temp.next != null) {
+            while(temp != null) {
                 System.out.print(temp.data+" ");
                 temp = temp.next;
 
@@ -125,6 +125,10 @@ public class LinkList {
             System.out.println("List empty; nothing to delete.");
             return null;
         }
+
+    }
+
+    public static void main(String[] args) {
 
     }
 
