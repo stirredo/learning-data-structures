@@ -119,8 +119,6 @@ public class DoubleEndedLinkList {
                 System.out.print(" ");
                 temp = temp.next;
 
-
-
             }
         } else {
             System.out.println("Link list is empty.");
