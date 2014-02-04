@@ -1,9 +1,11 @@
 package DoublyDoubleEndedLinkList;
 
+import java.util.Iterator;
+
 /**
  * Created by stirredo on 2/3/14.
  */
-public class DoublyDoubleEndedLinkList<type> {
+public class DoublyDoubleEndedLinkList<type> implements Iterable<type> {
     public DoublyNode first;
     public DoublyNode last;
     public DoublyDoubleEndedLinkList() {
@@ -79,20 +81,28 @@ public class DoublyDoubleEndedLinkList<type> {
             return null;
         }
     }
-    public void DisplayList() {
+    public void displayList() {
         if(!isEmpty()) {
             DoublyNode<type> current = first;
-            System.out.println("first -> last: ");
+            System.out.print("first -> last: ");
             while(current != null) {
                 current.displayNode();
                 System.out.print(" ");
                 current = current.next;
             }
+            System.out.println("");
         } else {
             System.out.println("List empty. Nothing to display.");
-
         }
     }
 
+    public static void main(String[] args) {
 
+    }
+
+
+    @Override
+    public Iterator<type> iterator() {
+        return new DoublyLinkListIterator<type>(this);
+    }
 }
