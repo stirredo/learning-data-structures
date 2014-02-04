@@ -3,9 +3,9 @@ package Insertion;
 /**
  * Created by stirredo on 1/18/14.
  */
-public class InsetionSortApp {
+public class ArrayInsetionSortApp {
     public static void main(String[] args) {
-        InsertionSortClass is = new InsertionSortClass(100);
+        ArrayInsertionSort is = new ArrayInsertionSort(100);
         is.insert(89);
         is.insert(45);
         is.insert(12);

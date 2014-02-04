@@ -3,8 +3,8 @@ import Sort.ArraySort;
 /**
  * Created by stirredo on 1/18/14.
  */
-public class InsertionSortClass extends ArraySort {
-    public InsertionSortClass(int maxsize) {
+public class ArrayInsertionSort extends ArraySort {
+    public ArrayInsertionSort(int maxsize) {
         super(maxsize);
     }
     @Override
