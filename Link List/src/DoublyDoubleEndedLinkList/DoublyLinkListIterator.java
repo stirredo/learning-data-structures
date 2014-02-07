@@ -43,11 +43,6 @@ public class DoublyLinkListIterator<type> implements Iterator<type> {
 
     @Override
     public void remove() {
-        /*
-        *  To remove element:
-        *   1. fix the previous link to the one after it
-        *   2. fix the next link to the one before it.
-        * */
         if(current.prev != null && current.next != null) {
             current.prev.next = current.next;
             current.next.prev = current.prev;
