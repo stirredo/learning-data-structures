@@ -21,6 +21,12 @@ public class OrderedArrayApp {
         } else {
             System.out.println("couldn't find it");
         }
+        location = oa.initRecFind(43);
+        if(location != null) {
+            System.out.println("Found at "+ location);
+        } else {
+            System.out.println("couldn't find it");
+        }
 
 
     }

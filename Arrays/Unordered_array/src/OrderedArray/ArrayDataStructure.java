@@ -1,5 +1,8 @@
 package OrderedArray;
 import UnorderedArray.*;
+
+import java.lang.Integer;
+
 /**
  * Created by stirredo on 1/15/14.
  */
@@ -35,6 +38,26 @@ public class ArrayDataStructure extends UnorderedArray.ArrayDataStructure {
                 }
             }
         }
+    }
+    public Integer recFind(int key, int lowerBound, int upperBound) {
+        int mid = (lowerBound + upperBound) / 2;
+        if(array[mid] == key) {
+            return mid;
+        } else if (lowerBound > upperBound) {
+            return null;
+        } else {
+            if(key > array[mid]) {
+                lowerBound = mid + 1;
+                return recFind(key, lowerBound, upperBound);
+            } else {
+                upperBound = mid - 1;
+                return recFind(key, lowerBound, upperBound);
+            }
+        }
+
+    }
+    public Integer initRecFind(int key) {
+        return recFind(key,0,count);
     }
     public void insert(long value) {
         int i,j;
