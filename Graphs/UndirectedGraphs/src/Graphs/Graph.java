@@ -71,13 +71,13 @@ public class Graph {
         displayVertex(vertexIndex);
         stack.push(vertexIndex);
         while (!stack.isEmpty()) {
-            int unvistedVertexIndex = getAdjacentUnvisitedVertexIndex(stack.peek());
-            if(unvistedVertexIndex == -1) {
+            int unvisitedVertexIndex = getAdjacentUnvisitedVertexIndex(stack.peek());
+            if(unvisitedVertexIndex == -1) {
                 stack.pop();
             } else {
-                vertexList[unvistedVertexIndex].wasVisited = true;
-                displayVertex(unvistedVertexIndex);
-                stack.push(unvistedVertexIndex);
+                vertexList[unvisitedVertexIndex].wasVisited = true;
+                displayVertex(unvisitedVertexIndex);
+                stack.push(unvisitedVertexIndex);
             }
         }
         for (int i = 0; i < vertexCount; i++) {
