@@ -16,8 +16,6 @@ public class Tree234<type extends Comparable<type>> {
 
         }
 
-
-
         @Override
         public int compareTo(type o) {
             return data.compareTo(o);

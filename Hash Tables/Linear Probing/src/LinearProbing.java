@@ -38,6 +38,10 @@ public class LinearProbing {
         public void put(keyType key, valueType value) {
             int hash = hashFunction(key);
             while (array[hash] != null && !array[hash].deleted) {
+                if (array[hash].key == key) { //If key already exists then just replace the value
+                    array[hash].value = value;
+                    return;
+                }
                 hash++;
                 hash = hash % arraySize;
             }
@@ -60,6 +64,7 @@ public class LinearProbing {
     public static void main(String[] args) {
         HashTable<String, Integer> ht = new HashTable<String, Integer>(10);
         ht.put("Stirredo", 25);
+        ht.put("Stirredo", 15);
         ht.put("RandomName1", 23);
         ht.put("RandomName2", 27);
         Integer answer;
